@@ -1,0 +1,39 @@
+Zaczynamy tworzyć grę!
+Cześć!
+
+W poprzedniej lekcji nauczyliśmy się obsługiwać repl.it, oraz tworzyć zmienne i funkcje oraz wyświetlać je na naszym ekranie. Stworzyliśmy też pierwsze instrukcje warunkowe, które będą nam niezbędne w przypadku naszej gry..
+
+Tworzymy planszę
+Już umiesz posługiwać się instrukcjami warunkowymi, oraz wiesz jak tworzyć zmienne i funkcje. Możemy już przejść do tworzenia prostej gry, jaką jest kółko i krzyżyk. Zaczniemy od zdefiniowania sobie naszej planszy do gry. Która powinna składać się z 9 pól, w których będzie można zaznaczać nasze krzyżyki i koła.
+
+Zanim to zrobimy, powiem Ci najpierw w jaki sposób możesz umieszczać komentarze w swoim kodzie, które pomogą Ci czytać i rozumieć napisany program. Jeżeli chcesz napisać coś co będzie jedynie komentarzem wystarczy, że w nowej linii zaczniesz pisać od # .
+
+Czyli możesz stworzyć komentarz np.
+
+image
+Super. już wiesz jak tworzyć komentarze. Nie są one interpretowane przez kompilator więc, możesz w nich umieszczać wszystkie dodatkowe informacje do kodu. Wróćmy więc do stworzenia tablicy do naszej gry.
+
+Tworzymy zmienną board w której umieszczamy dziewięć “-” (myśliników), które będą naszymi polami.
+
+image
+Super. to mamy już stworzoną zmienną board, składającą się z pól, które będziemy potem podmieniać na “X” lub “0”.
+
+Jeżeli odpalisz teraz program to oczywiście on nic nie wyświetli. Musimy zdefiniować sobie, np. przez funkcję def, całą naszą tablicę korzystając z funkcji print, których nauczyłeś się w pierwszej lekcji, a następnie wywołać naszą funkcję.
+
+Stwórzmy więc funkcję def zawierającą w sobie print naszej tablicy, oraz numeracji pól, które pomogą użytkownikowi wybierać odpowiednie pola.
+
+image
+Jeżeli teraz odpalisz swój program to funkcja zostanie wywołana a kompilator na ekranie wyświetli Twoją tablicę.
+
+Przed wywołaniem funkcji display_board() zdefiniujmy sobie funkcję, która będzie zawierała w sobie całą naszą grę. Dzięki temu będziemy mogli ją po prostu odpalić na końcu naszego systemu. Więc przed wywołaniem funkcji display_board() dopiszemy funkcję def którą nazwijmy play_game()
+
+Aktualnie cały nasz kod powinien wyglądać w ten sposób:
+
+image
+W jaki sposób to działa? Przeanalizuj sobie to krok po kroku samemu, ja postaram Ci się to omówić w jasny sposób. Mamy zdefiniowaną zmienną board składającą się z dziewięciu myślników. Następnie zdefiniowaliśmy funkcję def display_board():, która wyświetla nam tą tablicę oraz przypisuje jej odpowiednie pola.
+
+Stworzyliśmy funkcję def play_game(): która zawiera w sobie uruchomienie naszej funkcji display_board(), która odwołuje się do naszej zmiennej board. Na samym końcu po prostu odpalamy funkcję def play_game(), która wywołuje uruchomienie funkcji display_board().
+
+Na początku może brzmieć trochę strasznie, ale pisząc dalej nasz kod zrozumiesz dlaczego zastosowaliśmy takie rozwiązanie w którym wszystkie elementy naszej gry będziemy umieszczać w zdefiniowanej funkcji def play_game():
+
+Miłej nauki i do następnego razu!
