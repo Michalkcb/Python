@@ -1,0 +1,100 @@
+Zacznij naukę Pythona z Kodillą!
+
+Witaj w Wyzwaniu Python z Kodillą!
+
+Jest ono przeznaczone dla osób początkujących, które planują zacząć naukę Pythona, ale nie mają pewności, czy to właściwa ścieżka.
+
+W trakcie wyzwania otrzymasz od nas - w formie kilku lekcji - porcję wiedzy teoretycznej oraz garść praktycznych zadań. Dzięki temu poznasz podstawy teoretyczne Pythona, przekonasz się jak to wygląda w praktyce i z naszą pomocą zbudujesz grę "Kółko i Krzyżyk".
+
+Jak to działa?
+W określonych odstępach czasu otrzymujesz od nas maila z linkiem do kolejnej części wyzwania.
+Instrukcje do każdej części wyzwania pojawią się na tej stronie.
+Przechodząc całe wyzwanie i rozwiązując wszystkie zadania otrzymasz rabat na nasze bootcampy.
+Etap 1: Wstęp
+Cześć! Bardzo nam miło powitać Cię w pierwszym etapie Wyzwania Python z Kodillą. Przekonasz się, że Python wcale nie jest trudnym językiem, i opanowanie go jest możliwe. Wszystko, czego potrzebujesz, by zacząć, to trochę wolnego czasu, motywacji i samozaparcia. Prawdziwa programistyczna przygoda jest tuż na wyciągnięcie ręki. Powodzenia!
+
+Plan pracy
+Narzędzia
+Pisanie w Pythonie wymaga skonfigurowanego środowiska developerskiego, ale nie przejmuj się – na potrzeby tego Wyzwania uprościmy sobie sprawę i zamiast instalować je na komputerze, skorzystamy z gotowego edytora online.
+
+Kliknij ten link, aby przejść do edytora: https://repl.it/languages/python3
+
+Co tam widzimy? Sam edytor jest podzielony na trzy kolumny: w lewej znajduje się lista plików w naszym projekcie (na razie jest jeden: main.py), w środkowej będziemy pisać kod, a w prawej (w tak zwanej konsoli) zobaczymy rezultaty naszych wysiłków. Cała nasza aplikacja będzie wyświetlona w formie tekstowej w prawej kolumnie. Istnieją narzędzia umożliwiające dodanie interfejsu graficznego do programów napisanych w Pythonie, ale jest to bardziej zaawansowana opcja, którą poznasz na naszym bootcampie, gdy już dość dobrze opanujesz sam język. Zawsze na początku przygody z Pythonem developer widzi tylko tekstowy wynik swojego kodu :)
+
+Hello World!
+Jak widzisz, przy pierwszym uruchomieniu środkowa kolumna jest pusta i nie ma tam żadnego kodu. Dlatego teraz napiszemy sobie pierwszy kod.
+
+Przywitanie się ze światem (czyli właśnie nasze "Hello World!") to zwykle pierwsze ćwiczenie przy opanowywaniu jakiegokolwiek języka programowania :) W języku Python jest to dość proste. Jeżeli chcesz wyświetlić na ekranie jakiś tekst musisz stworzyć funkcję print(). Wpisz w edytorze print(“Cześć, jestem Twoim pierwszym programem”).
+
+Teraz kliknij przycisk “RUN”. Znajduje się on na pasku na górze i wygląda tak:
+
+image
+Po chwili, po prawej, wyświetli się napis "Cześć, jestem Twoim pierwszym programem":
+
+image
+Oznacza to, że Twój program działa i kompilator uruchomił poprawnie Twój kod. Dzięki tej funkcji możesz w swoim programie wyświetlać dowolny tekst. Możesz zmienić jego treść pomiędzy cudzysłowami, i sprawdzić jeszcze raz.
+
+Zaczynamy kodowanie!
+Czym są funkcje?
+Funkcje w Pythonie to po prostu wydzielony fragment kodu, który można używać wielokrotnie i zawiera on w sobie jakieś działanie.
+
+Nie rozumiesz? Postaram Ci się to wytłumaczyć bardziej obrazowo.
+
+Załóżmy, że jakiś Twój znajomy prosi Cię o zaparzenie herbaty (która będzie Twoją funkcją). Więc automatycznie nalewasz wodę do czajnika, gotujesz ją, wsypujesz herbatę do kubka, a następnie zalewasz zagotowaną wodą. Czyli wykonujesz szereg czynności wywołanych przez funkcję (prośbę) zagotuj herbatę - ponieważ jest ona zakodowana w Twojej głowie.
+
+Tak więc funkcja “Zagotuj herbatę” zawiera w sobie listę czynności, którą wykonujesz jeżeli zostanie ona wywołana. Tam samo działa to w Pythonie.
+
+Funkcje w Pythonie definiujemy poprzez słowo kluczowe def, po którym następuje nazwa, którą określasz swoją funkcję, nawiasy, oraz : (dwukropek)
+
+Przykład:
+
+Stworzymy teraz funkcję, która będzie wywoływać wyświetlanie tekstu “Cześć, to ja Twoja funkcja”. Już wiesz jak się posługiwać print()
+
+image
+Spójrz na tę zdefiniowaną funkcję. Tak jak pisałem, składa się ona z:
+
+def - czyli określenia funkcji
+mojtekst(): - to nazwa Twojej funkcji
+print (“Cześć to ja Twoja funkcja”) - czynność, którą ma wykonać ta funkcja (czyli wyświetlenie odpowiedniego tekstu).
+Tak zbudowaną funkcję możesz wywołać w dowolnym momencie swojego programu poprzez skorzystanie tylko z jej nazwy. Czyli: mojtekst()
+
+Jeżeli wpiszesz gdzieś w swoim programie tę nazwę, system z automatu wyświetli tekst “Cześć to ja Twoja funkcja”.
+
+Spróbuj uruchomić taki program, w którym najpierw definiujemy naszą funkcję, a potem ją po prostu przywołujemy:
+
+image
+Oczywiście ta funkcja jest bardzo prosta, ale mogłaby być bardziej złożona i zawierać w sobie szereg informacji i czynności, które ma wykonać program po jej wywołaniu.
+
+Spróbujmy teraz zdefiniować funkcję, która doda nam do siebie dwie wartości 2 oraz 5 i wyświetli ich wynik. Najpierw musimy stworzyć funkcję zawierającą te wartości i dodawanie. Robimy to następująco:
+
+image
+Zauważ, że skorzystaliśmy z nowego słowa return. Służy ono do zakończenia wykonywania kodu w funkcji i pozwala na zwrot dowolnej wartości. Jeżeli mamy już tak zdefiniowaną funkcję to należałoby ją wywołać. Na końcu kodu dodajmy poznany już wcześniej print() w którym umieścimy naszą funkcję.
+
+image
+Możesz teraz wcisnąć RUN i uruchomić swój program. Skompilowany kod powinien teraz wyświetlić wynik Twojego zdefiniowanego w funkcji dodawania. Dodajmy jeszcze do tego fragment tekstu żeby nie było tak sucho. Zamień swój print na taki jak poniżej:
+
+image
+Pamiętaj żeby w princie oddzielać kolejne elementy przecinkiem, jeżeli korzystasz z kilku tak jak w tym przypadku. Cały kod powinien wyglądać tak:
+
+image
+BRAWO UDAŁO CI SIĘ STWORZYĆ SUPER PROSTY PROGRAM, KTÓRY DODAJE DO SIEBIE 2 + 5 I WYŚWIETLA WYNIK TEGO DODAWANIA. URUCHOM GO KLIKAJĄĆ W GUZIK RUN
+
+ZMIENNE
+Nauczymy się teraz tworzyć zmienne. Czym one są? Wyobraź sobie, że są one pudełkiem przechowującym jakąś wartość w pamięci komputera. Zmienną może być fragment tekstu (tzw. string), jakaś funkcja, czy wartość liczbowa. Zmienne w Pythonie tworzymy w bardzo przystępny dla początkujących sposób: nazwazmiennej = przechowywanawartość
+
+czyli najpierw definiujemy nazwę zmiennej, następnie znak “równa się”, czyli to czym jest ta zmienna. Dla przykładu możesz przechować sobie w zmiennej np. odpowiednie słowa. Dla przykładu skonfigurujemy dwie zmienne - x, która będzie przechowywać Twoje imię oraz y, które będzie przechowywać Twoją datę urodzenia. Tworzymy więc:
+
+x = “Twojeimie”
+
+y = Twójrokurodzenia
+
+(jeżeli chcesz przechować tekst w zmiennej musisz go ująć w cudzysłowach, jeżeli jest to wartość liczbowa nie korzystasz z cudzysłowu).
+
+MUSISZ WIEDZIEĆ, ŻE WIELKOŚC ZNAKÓW W PYTHONIE MA ZNACZENIE. JEZELI TWOJA ZMIENNA TO (MAŁE) x TO NIE JEST TO SAMO CO (DUŻE) X
+
+Teraz wykorzystamy wcześniej poznaną funkcję print() żeby wywołać odpowiednie zmienne w tekście.
+
+image
+PAMIĘTAJ O PRZECINKACH, KTÓRYMI ODDZIELASZ W PRINCIE ZMIENNE, OD WARTOŚCI TEKSTOWYCH, OD FUNKCJI!
+
+Uruchom teraz swój program. Powinien on wyświetlić tekst z wykorzystaniem tych dwóch zmiennych. Wiesz już jak tworzyć zmienne i funkcje. Dla utrwalenia wiedzy zachęcam do zabawy i eksperymentowania z tymi dwoma elementami.

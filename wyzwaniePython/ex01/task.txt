@@ -1,0 +1,47 @@
+INSTRUKCJE WARUNKOWE
+Cześć!
+
+W poprzedniej lekcji nauczyliśmy się tworzyć zmienne i funkcje oraz wyświetlać je na naszym ekranie. Teraz przejdziemy do następnego etapu w którym poznasz operatory logiczne.
+
+Czym są instrukcje warunkowe?
+Pamiętasz jak tłumaczyłem Ci funkcje na przykładzie gotowania herbaty? To wyobraź sobie, że znowu zostałeś poproszony przez znajomego o ugotowanie herbaty ale co w przypadku jeżeli czajnik jest pełen wody? albo nie masz czystych kubków?.
+
+Za takie warunki odpowiadają właśnie instrukcje warunkowe w Pythonie. Sprawdzają one czy występuje dane zdarzenie i odwołują się do odpowiedniej funkcji tzn. Jeżeli wcześniej proces gotowania herbaty wyglądał następująco:
+
+1. Zagotuj wodę
+2. Wsyp herbatę do kubka
+3. Zalej herbatę wrzątkiem
+To właśnie instrukcje warunkowe pozwalają sprawdzić występowanie różnych sytuacji takich jak“Jeżeli” herbata jest już nasypana do kubka to pomiń etap drugi, w przeciwnym razie wsyp herbatę do kubka. Rozumiesz już do czego zmierzam? Jakby to wyglądało w procesie krok po kroku:
+
+1. Zagotuj wodę
+2. Jeżeli herbata jest już w kubku to zrób pkt. 3, jeżeli nie to pkt. 2a
+2a. Nasyp herbatę do kubka
+Zalej herbatę wrzątkiem
+To teraz przykład jak to wygląda w Pythonie. Zdefiniujmy sobie zmienną, której wartość to Twoje imie. Robiliśmy to już wcześniej:x = “Twojeimie”
+
+następnie skorzystamy z operatorów logicznych If (jeżeli) oraz else (w przeciwnym wypadku).
+
+image
+Przyjrzyj się temu fragmentowi kodu. Działa on w taki sposób. Warunek if sprawdza czy zmienna x to “Twoje imię”. Następnie jeżeli ten warunek jest prawdziwy poprzez funkcję print, którą już znasz wyświetla tekst “Nazywasz się”, a następnie Twoją zmienną.
+
+W przeciwnym wypadku wyświetli tekst “Nie nazywasz się” a następnie Twoją zmienną. Żeby to dokładnie zrozumieć zmień zmienną x na imię Twojego najlepszego kolegi lub koleżanki i zobacz co się stanie. Możesz też zmienić wartość zmiennej którą sprawdza warunek if. Zobaczysz co się stanie. Pokombinuj trochę i spróbuj się pobawić.
+
+Dodajmy teraz kolejny warunek, którym jest ELIF, czyli else if. Pozwala to na tworzenie dłuższych warunków. Już tłumaczę. Możesz sprawdzić czy zmienna x to twoje imię, ale jeżeli nie to system sprawdzi kolejny warunek np. czy y to twoje imię. Jeżeli ten warunek będzie poprawny to wywoła odpowiednią czynność.
+
+Napisz zmienną x, która zawiera imię Twojego znajomego, a następnie zmienną y która zawiera Twoje imię.
+
+x = “Imieznajomego”
+
+y = “Twojeimie”
+
+Następnie stworzymy warunki tak jak poprzednio, ale dodamy do niego elif. Tak to powinno wyglądać w całości.
+
+image
+Popatrz na ten kod. Twój program sprawdza czy zmienna X zawiera twoje imię (ale to nie prawda bo wpisaliśmy tam imię Twojego znajomego), więc następnie sprawdza czy Y przechowuje Twoje imię, więc uruchamia funkcję print() która wyświetli tekst “Nazywasz się” i zaciągnie wartość ze zmiennej Y. Gdyby i ten warunek okazał się nieprawdziwy to wyświetliłby tekst spod else: czyli “Żadna zmienna nie przechowuje twojego imienia”. Zmień na przykład imię zawarte w zmiennej Y na imię Twojej mamy i zobacz co się stanie.
+
+Spróbuj teraz pobawić się zmiennymi, oraz instrukcjami warunkowymi. Możesz dodawać ich jeszcze więcej, a nawet w każdej z nich sprawdzać tą samą zmienną i występującą pod nią wartość. Np.
+
+image
+Tak jak widzisz w tym kodzie sprawdzamy po kolei czy Twoje imie ukryte pod zmienną x, to imię jednego z członków Wojowniczych Żółwi Ninja. Jeżeli nie nazywasz się tak jak żaden z nich to program wyświetli Ci odpowiednią informację.
+
+Umiesz już zmienne, funkcje, oraz pokazałem Ci instrukcje warunkowe. To już bardzo dużo. W następnej lekcji zaczniemy przygotowywać już Twoją grę.
