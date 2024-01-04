@@ -4,9 +4,9 @@ board = ["_","_","_",
 
 def display_board():
     print("\n")
-    print(board[0] + " | " + board[1] + " | "+ board[2] + " | " + " 1 | 2 | 3")
-    print(board[3] + " | " + board[4] + " | "+ board[5] + " | " + " 3 | 4 | 5")
-    print(board[6] + " | " + board[7] + " | "+ board[8] + " | " + " 6 | 7 | 8")
+    print(board[0] + " | " + board[1] + " | "+ board[2] + "     1 | 2 | 3")
+    print(board[3] + " | " + board[4] + " | "+ board[5] + "     4 | 5 | 6")
+    print(board[6] + " | " + board[7] + " | "+ board[8] + "     7 | 8 | 9")
     print("\n")
 
 def handle_turn(player):
@@ -21,13 +21,13 @@ def handle_turn(player):
     if board[position] != "_":
         print("To miejsce na planszy jest już zajęte")
 
-    board[position] != player
+    board[position] = player
     display_board()
 
 def check_if_game_is_on(current_player):
     if check_rows() or check_cols() or check_diag():
           winner = toggle_player(current_player)
-          print("gratulacje " + winner + "! Wygrałeś!")
+          print("Gratulacje " + winner + "! Wygrałeś!")
           return False
     elif "_" not in board:
         print("Mamy remis!")
@@ -66,10 +66,18 @@ def check_diag():
         
 def toggle_player(current_player):
     if current_player == "X":
-          current_player = "O"
+        current_player = "O"
     else:
         current_player = "X"
 
     return current_player
 
+def play_game():
+    display_board()
 
+    current_player = "X"
+    while check_if_game_is_on(current_player):
+        handle_turn(current_player)
+        current_player = toggle_player(current_player)
+
+play_game()
