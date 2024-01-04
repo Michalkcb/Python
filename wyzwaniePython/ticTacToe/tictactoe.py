@@ -54,3 +54,11 @@ def check_diag():
             return True
         else:
             return False
+        
+def flip_player(current_player):
+    if current_player == "X":
+          current_player = "O"
+    else:
+        current_player = "X"
+
+    return current_player
