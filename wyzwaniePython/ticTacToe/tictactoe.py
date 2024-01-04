@@ -9,8 +9,6 @@ def display_board():
     print(board[6] + " | " + board[7] + " | "+ board[8] + " | " + " 6 | 7 | 8")
     print("\n")
 
-display_board()
-
 def handle_turn(player):
     print(player + "twoja kolej")
     position = input("wybierz pozycję od 1 do 9: ")
@@ -25,6 +23,17 @@ def handle_turn(player):
 
     board[position] != player
     display_board()
+
+def check_if_game_is_on(current_player):
+    if check_rows() or check_cols() or check_diag():
+          winner = toggle_player(current_player)
+          print("gratulacje " + winner + "! Wygrałeś!")
+          return False
+    elif "_" not in board:
+        print("Mamy remis!")
+        return False
+    else:
+         return True
 
 def check_rows():
         row_1 = board[0] == board[1] == board[2] != "_"
@@ -55,10 +64,12 @@ def check_diag():
         else:
             return False
         
-def flip_player(current_player):
+def toggle_player(current_player):
     if current_player == "X":
           current_player = "O"
     else:
         current_player = "X"
 
     return current_player
+
+
