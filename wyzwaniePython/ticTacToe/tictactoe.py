@@ -31,6 +31,7 @@ def check_if_game_is_on(current_player):
           return False
     elif "_" not in board:
         print("Mamy remis!")
+        
         return False
     else:
          return True
